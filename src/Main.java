@@ -2,8 +2,8 @@ import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import org.w3c.dom.*;
 import java.util.Random;
 
 
@@ -34,7 +34,7 @@ public abstract class Main extends Application {
                 int rot = rand.nextInt(360);
                 text.setFill(Color.rgb(red, green, blue));
                 text.setRotate(rot);
-                root.getChildren().add((javafx.scene.Node) text);
+                root.getChildren().add(text);
             }
 
             primaryStage.setScene(scene);
